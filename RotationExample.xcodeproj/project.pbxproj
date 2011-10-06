@@ -1,0 +1,344 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		022011511431E2D200BAF157 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022011501431E2D200BAF157 /* UIKit.framework */; };
+		022011531431E2D200BAF157 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022011521431E2D200BAF157 /* Foundation.framework */; };
+		022011551431E2D200BAF157 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022011541431E2D200BAF157 /* CoreGraphics.framework */; };
+		0220115B1431E2D200BAF157 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 022011591431E2D200BAF157 /* InfoPlist.strings */; };
+		0220115D1431E2D200BAF157 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0220115C1431E2D200BAF157 /* main.m */; };
+		022011611431E2D200BAF157 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 022011601431E2D200BAF157 /* AppDelegate.m */; };
+		022011641431E2D200BAF157 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 022011621431E2D200BAF157 /* MainWindow.xib */; };
+		022011721431E32300BAF157 /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 022011711431E32300BAF157 /* BaseController.m */; };
+		022011761431E35000BAF157 /* FirstControllerPortraitIpad.m in Sources */ = {isa = PBXBuildFile; fileRef = 022011741431E35000BAF157 /* FirstControllerPortraitIpad.m */; };
+		022011771431E35000BAF157 /* FirstControllerPortraitIpad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 022011751431E35000BAF157 /* FirstControllerPortraitIpad.xib */; };
+		0220117B1431E37100BAF157 /* FirstControllerLandscapeIpad.m in Sources */ = {isa = PBXBuildFile; fileRef = 022011791431E37100BAF157 /* FirstControllerLandscapeIpad.m */; };
+		0220117C1431E37100BAF157 /* FirstControllerLandscapeIpad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0220117A1431E37100BAF157 /* FirstControllerLandscapeIpad.xib */; };
+		022011801431E39400BAF157 /* FirstControllerPortraitIphone.m in Sources */ = {isa = PBXBuildFile; fileRef = 0220117E1431E39400BAF157 /* FirstControllerPortraitIphone.m */; };
+		022011811431E39400BAF157 /* FirstControllerPortraitIphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0220117F1431E39400BAF157 /* FirstControllerPortraitIphone.xib */; };
+		022011851431E3A400BAF157 /* FirstControllerLandscapeIphone.m in Sources */ = {isa = PBXBuildFile; fileRef = 022011831431E3A400BAF157 /* FirstControllerLandscapeIphone.m */; };
+		022011861431E3A400BAF157 /* FirstControllerLandscapeIphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 022011841431E3A400BAF157 /* FirstControllerLandscapeIphone.xib */; };
+		0220118A1431E3B500BAF157 /* SecondController.m in Sources */ = {isa = PBXBuildFile; fileRef = 022011881431E3B500BAF157 /* SecondController.m */; };
+		0220118B1431E3B500BAF157 /* SecondController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 022011891431E3B500BAF157 /* SecondController.xib */; };
+		0243BDB6143E098900182D4F /* ModalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0243BDB4143E098800182D4F /* ModalController.m */; };
+		0243BDB7143E098900182D4F /* ModalController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0243BDB5143E098800182D4F /* ModalController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0220114C1431E2D200BAF157 /* RotationExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RotationExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		022011501431E2D200BAF157 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		022011521431E2D200BAF157 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		022011541431E2D200BAF157 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		022011581431E2D200BAF157 /* RotationExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RotationExample-Info.plist"; sourceTree = "<group>"; };
+		0220115A1431E2D200BAF157 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0220115C1431E2D200BAF157 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0220115E1431E2D200BAF157 /* RotationExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RotationExample-Prefix.pch"; sourceTree = "<group>"; };
+		0220115F1431E2D200BAF157 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		022011601431E2D200BAF157 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		022011631431E2D200BAF157 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		022011701431E32300BAF157 /* BaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseController.h; sourceTree = "<group>"; };
+		022011711431E32300BAF157 /* BaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseController.m; sourceTree = "<group>"; };
+		022011731431E35000BAF157 /* FirstControllerPortraitIpad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstControllerPortraitIpad.h; sourceTree = "<group>"; };
+		022011741431E35000BAF157 /* FirstControllerPortraitIpad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstControllerPortraitIpad.m; sourceTree = "<group>"; };
+		022011751431E35000BAF157 /* FirstControllerPortraitIpad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstControllerPortraitIpad.xib; sourceTree = "<group>"; };
+		022011781431E37100BAF157 /* FirstControllerLandscapeIpad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstControllerLandscapeIpad.h; sourceTree = "<group>"; };
+		022011791431E37100BAF157 /* FirstControllerLandscapeIpad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstControllerLandscapeIpad.m; sourceTree = "<group>"; };
+		0220117A1431E37100BAF157 /* FirstControllerLandscapeIpad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstControllerLandscapeIpad.xib; sourceTree = "<group>"; };
+		0220117D1431E39400BAF157 /* FirstControllerPortraitIphone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstControllerPortraitIphone.h; sourceTree = "<group>"; };
+		0220117E1431E39400BAF157 /* FirstControllerPortraitIphone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstControllerPortraitIphone.m; sourceTree = "<group>"; };
+		0220117F1431E39400BAF157 /* FirstControllerPortraitIphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstControllerPortraitIphone.xib; sourceTree = "<group>"; };
+		022011821431E3A400BAF157 /* FirstControllerLandscapeIphone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstControllerLandscapeIphone.h; sourceTree = "<group>"; };
+		022011831431E3A400BAF157 /* FirstControllerLandscapeIphone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstControllerLandscapeIphone.m; sourceTree = "<group>"; };
+		022011841431E3A400BAF157 /* FirstControllerLandscapeIphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstControllerLandscapeIphone.xib; sourceTree = "<group>"; };
+		022011871431E3B500BAF157 /* SecondController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondController.h; sourceTree = "<group>"; };
+		022011881431E3B500BAF157 /* SecondController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondController.m; sourceTree = "<group>"; };
+		022011891431E3B500BAF157 /* SecondController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondController.xib; sourceTree = "<group>"; };
+		0243BDB3143E098700182D4F /* ModalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalController.h; sourceTree = "<group>"; };
+		0243BDB4143E098800182D4F /* ModalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalController.m; sourceTree = "<group>"; };
+		0243BDB5143E098800182D4F /* ModalController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModalController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		022011491431E2D200BAF157 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				022011511431E2D200BAF157 /* UIKit.framework in Frameworks */,
+				022011531431E2D200BAF157 /* Foundation.framework in Frameworks */,
+				022011551431E2D200BAF157 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		022011411431E2D200BAF157 = {
+			isa = PBXGroup;
+			children = (
+				022011561431E2D200BAF157 /* RotationExample */,
+				0220114F1431E2D200BAF157 /* Frameworks */,
+				0220114D1431E2D200BAF157 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0220114D1431E2D200BAF157 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0220114C1431E2D200BAF157 /* RotationExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0220114F1431E2D200BAF157 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				022011501431E2D200BAF157 /* UIKit.framework */,
+				022011521431E2D200BAF157 /* Foundation.framework */,
+				022011541431E2D200BAF157 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		022011561431E2D200BAF157 /* RotationExample */ = {
+			isa = PBXGroup;
+			children = (
+				0220115F1431E2D200BAF157 /* AppDelegate.h */,
+				022011601431E2D200BAF157 /* AppDelegate.m */,
+				022011621431E2D200BAF157 /* MainWindow.xib */,
+				022011701431E32300BAF157 /* BaseController.h */,
+				022011711431E32300BAF157 /* BaseController.m */,
+				022011731431E35000BAF157 /* FirstControllerPortraitIpad.h */,
+				022011741431E35000BAF157 /* FirstControllerPortraitIpad.m */,
+				022011751431E35000BAF157 /* FirstControllerPortraitIpad.xib */,
+				022011781431E37100BAF157 /* FirstControllerLandscapeIpad.h */,
+				022011791431E37100BAF157 /* FirstControllerLandscapeIpad.m */,
+				0220117A1431E37100BAF157 /* FirstControllerLandscapeIpad.xib */,
+				0220117D1431E39400BAF157 /* FirstControllerPortraitIphone.h */,
+				0220117E1431E39400BAF157 /* FirstControllerPortraitIphone.m */,
+				0220117F1431E39400BAF157 /* FirstControllerPortraitIphone.xib */,
+				022011821431E3A400BAF157 /* FirstControllerLandscapeIphone.h */,
+				022011831431E3A400BAF157 /* FirstControllerLandscapeIphone.m */,
+				022011841431E3A400BAF157 /* FirstControllerLandscapeIphone.xib */,
+				022011871431E3B500BAF157 /* SecondController.h */,
+				022011881431E3B500BAF157 /* SecondController.m */,
+				022011891431E3B500BAF157 /* SecondController.xib */,
+				0243BDB3143E098700182D4F /* ModalController.h */,
+				0243BDB4143E098800182D4F /* ModalController.m */,
+				0243BDB5143E098800182D4F /* ModalController.xib */,
+				022011571431E2D200BAF157 /* Supporting Files */,
+			);
+			path = RotationExample;
+			sourceTree = "<group>";
+		};
+		022011571431E2D200BAF157 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				022011581431E2D200BAF157 /* RotationExample-Info.plist */,
+				022011591431E2D200BAF157 /* InfoPlist.strings */,
+				0220115C1431E2D200BAF157 /* main.m */,
+				0220115E1431E2D200BAF157 /* RotationExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0220114B1431E2D200BAF157 /* RotationExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0220116D1431E2D200BAF157 /* Build configuration list for PBXNativeTarget "RotationExample" */;
+			buildPhases = (
+				022011481431E2D200BAF157 /* Sources */,
+				022011491431E2D200BAF157 /* Frameworks */,
+				0220114A1431E2D200BAF157 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RotationExample;
+			productName = RotationExample;
+			productReference = 0220114C1431E2D200BAF157 /* RotationExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		022011431431E2D200BAF157 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Altralogica s.r.l.";
+			};
+			buildConfigurationList = 022011461431E2D200BAF157 /* Build configuration list for PBXProject "RotationExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 022011411431E2D200BAF157;
+			productRefGroup = 0220114D1431E2D200BAF157 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0220114B1431E2D200BAF157 /* RotationExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0220114A1431E2D200BAF157 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0220115B1431E2D200BAF157 /* InfoPlist.strings in Resources */,
+				022011641431E2D200BAF157 /* MainWindow.xib in Resources */,
+				022011771431E35000BAF157 /* FirstControllerPortraitIpad.xib in Resources */,
+				0220117C1431E37100BAF157 /* FirstControllerLandscapeIpad.xib in Resources */,
+				022011811431E39400BAF157 /* FirstControllerPortraitIphone.xib in Resources */,
+				022011861431E3A400BAF157 /* FirstControllerLandscapeIphone.xib in Resources */,
+				0220118B1431E3B500BAF157 /* SecondController.xib in Resources */,
+				0243BDB7143E098900182D4F /* ModalController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		022011481431E2D200BAF157 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0220115D1431E2D200BAF157 /* main.m in Sources */,
+				022011611431E2D200BAF157 /* AppDelegate.m in Sources */,
+				022011721431E32300BAF157 /* BaseController.m in Sources */,
+				022011761431E35000BAF157 /* FirstControllerPortraitIpad.m in Sources */,
+				0220117B1431E37100BAF157 /* FirstControllerLandscapeIpad.m in Sources */,
+				022011801431E39400BAF157 /* FirstControllerPortraitIphone.m in Sources */,
+				022011851431E3A400BAF157 /* FirstControllerLandscapeIphone.m in Sources */,
+				0220118A1431E3B500BAF157 /* SecondController.m in Sources */,
+				0243BDB6143E098900182D4F /* ModalController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		022011591431E2D200BAF157 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0220115A1431E2D200BAF157 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		022011621431E2D200BAF157 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				022011631431E2D200BAF157 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0220116B1431E2D200BAF157 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0220116C1431E2D200BAF157 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0220116E1431E2D200BAF157 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RotationExample/RotationExample-Prefix.pch";
+				INFOPLIST_FILE = "RotationExample/RotationExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0220116F1431E2D200BAF157 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RotationExample/RotationExample-Prefix.pch";
+				INFOPLIST_FILE = "RotationExample/RotationExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		022011461431E2D200BAF157 /* Build configuration list for PBXProject "RotationExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0220116B1431E2D200BAF157 /* Debug */,
+				0220116C1431E2D200BAF157 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0220116D1431E2D200BAF157 /* Build configuration list for PBXNativeTarget "RotationExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0220116E1431E2D200BAF157 /* Debug */,
+				0220116F1431E2D200BAF157 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 022011431431E2D200BAF157 /* Project object */;
+}
