@@ -27,6 +27,7 @@
 		0220118B1431E3B500BAF157 /* SecondController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 022011891431E3B500BAF157 /* SecondController.xib */; };
 		0243BDB6143E098900182D4F /* ModalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0243BDB4143E098800182D4F /* ModalController.m */; };
 		0243BDB7143E098900182D4F /* ModalController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0243BDB5143E098800182D4F /* ModalController.xib */; };
+		0243BDEF143EED9700182D4F /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 0243BDEE143EED9700182D4F /* README.markdown */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		0243BDB3143E098700182D4F /* ModalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalController.h; sourceTree = "<group>"; };
 		0243BDB4143E098800182D4F /* ModalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalController.m; sourceTree = "<group>"; };
 		0243BDB5143E098800182D4F /* ModalController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModalController.xib; sourceTree = "<group>"; };
+		0243BDEE143EED9700182D4F /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.markdown; path = ../README.markdown; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 				022011591431E2D200BAF157 /* InfoPlist.strings */,
 				0220115C1431E2D200BAF157 /* main.m */,
 				0220115E1431E2D200BAF157 /* RotationExample-Prefix.pch */,
+				0243BDEE143EED9700182D4F /* README.markdown */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				022011861431E3A400BAF157 /* FirstControllerLandscapeIphone.xib in Resources */,
 				0220118B1431E3B500BAF157 /* SecondController.xib in Resources */,
 				0243BDB7143E098900182D4F /* ModalController.xib in Resources */,
+				0243BDEF143EED9700182D4F /* README.markdown in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,8 +6,11 @@
 //  Copyright 2011 Altralogica s.r.l. All rights reserved.
 //
 
-#import "BaseController.h"
+@interface SecondController : UIViewController
+{
+    
+}
 
-@interface SecondController : BaseController
+-(IBAction)dismiss:(id)sender;
 
 @end

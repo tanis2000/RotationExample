@@ -7,6 +7,7 @@
 //
 
 #import "BaseController.h"
+#import "AppDelegate.h"
 
 @implementation BaseController
 
@@ -27,6 +28,15 @@
     [super didReceiveMemoryWarning];
     
     // Release any cached data, images, etc that aren't in use.
+}
+
+-(void)dealloc
+{
+    if (secondController != nil) {
+        [secondController release];
+        secondController = nil;
+    }
+    [super dealloc];
 }
 
 #pragma mark - View lifecycle
@@ -56,7 +66,7 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    return YES;
 }
 
 
@@ -64,7 +74,18 @@
 
 -(IBAction)doSomething:(id)sender
 {
+    if (secondController == nil) {
+        secondController = [[SecondController alloc] initWithNibName:@"SecondController" bundle:nil];
+    }
     
+    if ([AppDelegate get].navigationController.topViewController == secondController) {
+        return;
+    }
+    if ([[AppDelegate get].navigationController.viewControllers containsObject:secondController]) {
+        [[AppDelegate get].navigationController popToViewController:secondController animated:YES];
+        return;
+    }
+    [[AppDelegate get].navigationController pushViewController:secondController animated:YES];
 }
 
 @end

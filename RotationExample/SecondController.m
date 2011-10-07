@@ -48,4 +48,11 @@
 	return YES;
 }
 
+#pragma mark - Our stuff
+
+-(IBAction)dismiss:(id)sender
+{
+    [self.navigationController popViewControllerAnimated:NO];
+}
+
 @end

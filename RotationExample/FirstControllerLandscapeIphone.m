@@ -7,6 +7,7 @@
 //
 
 #import "FirstControllerLandscapeIphone.h"
+#import "AppDelegate.h"
 
 @implementation FirstControllerLandscapeIphone
 
@@ -42,10 +43,27 @@
     // e.g. self.myOutlet = nil;
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    if (UIDeviceOrientationIsPortrait([[UIDevice currentDevice] orientation]) && [AppDelegate get].navigationController.topViewController == self)
+    {
+        [[AppDelegate get].navigationController popViewControllerAnimated:YES];
+    }
+}
+
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+	return YES;
+}
+
+- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
+    [super willRotateToInterfaceOrientation:toInterfaceOrientation duration:duration];
+    if (UIDeviceOrientationIsPortrait(toInterfaceOrientation) && [AppDelegate get].navigationController.topViewController == self)
+    {
+        [[AppDelegate get].navigationController popViewControllerAnimated:YES];
+    }
 }
 
 @end

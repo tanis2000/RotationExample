@@ -7,6 +7,8 @@
 //
 
 #import "FirstControllerPortraitIphone.h"
+#import "FirstControllerLandscapeIphone.h"
+#import "AppDelegate.h"
 
 @implementation FirstControllerPortraitIphone
 
@@ -27,12 +29,22 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
+-(void)dealloc
+{
+    
+    [firstControllerLandscape release];
+    [super dealloc];
+}
+
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    if (firstControllerLandscape == nil) {
+        firstControllerLandscape = [[FirstControllerLandscapeIphone alloc] initWithNibName:@"FirstControllerLandscapeIphone" bundle:nil];
+    }
 }
 
 - (void)viewDidUnload
@@ -42,10 +54,32 @@
     // e.g. self.myOutlet = nil;
 }
 
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    if (UIDeviceOrientationIsLandscape([[UIDevice currentDevice] orientation]) && [AppDelegate get].navigationController.topViewController == self)
+	{
+        [[AppDelegate get].navigationController pushViewController:firstControllerLandscape animated:NO];
+    }
+}
+
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+	return YES;
+}
+
+- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
+    [super willRotateToInterfaceOrientation:toInterfaceOrientation duration:duration];
+    if (UIDeviceOrientationIsLandscape(toInterfaceOrientation) && [AppDelegate get].navigationController.topViewController == self)
+    {
+        [[AppDelegate get].navigationController pushViewController:firstControllerLandscape animated:YES];
+    }
+	else if (UIDeviceOrientationIsPortrait(toInterfaceOrientation) && [AppDelegate get].navigationController.topViewController == firstControllerLandscape)
+	{
+        [[AppDelegate get].navigationController popViewControllerAnimated:YES];
+        
+    }
 }
 
 @end

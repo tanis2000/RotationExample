@@ -6,7 +6,7 @@
 //  Copyright 2011 Altralogica s.r.l. All rights reserved.
 //
 
-
+#import "SecondController.h"
 
 @interface BaseController : UIViewController
 {
@@ -14,6 +14,7 @@
     UIButton *btn;
     
     BaseController *firstControllerLandscape;
+    SecondController *secondController;
 }
 
 @property(nonatomic,retain) IBOutlet UILabel *label;
