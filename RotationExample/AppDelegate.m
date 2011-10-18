@@ -64,12 +64,6 @@
      */
 }
 
-- (void)dealloc
-{
-    [_window release];
-    [_navigationController release];
-    [super dealloc];
-}
 
 +(AppDelegate *) get {
     return (AppDelegate *) [[UIApplication sharedApplication] delegate];
@@ -88,7 +82,6 @@
     
     [self.navigationController pushViewController:firstControllerPortrait animated:NO];
     
-    [firstControllerPortrait release];
 }
 
 

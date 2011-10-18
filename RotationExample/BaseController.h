@@ -17,8 +17,8 @@
     SecondController *secondController;
 }
 
-@property(nonatomic,retain) IBOutlet UILabel *label;
-@property(nonatomic,retain) IBOutlet UIButton *btn;
+@property(nonatomic,strong) IBOutlet UILabel *label;
+@property(nonatomic,strong) IBOutlet UIButton *btn;
 
 -(IBAction)doSomething:(id)sender;
 

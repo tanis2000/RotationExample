@@ -29,12 +29,6 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
--(void)dealloc
-{
-    
-    [firstControllerLandscape release];
-    [super dealloc];
-}
 
 #pragma mark - View lifecycle
 

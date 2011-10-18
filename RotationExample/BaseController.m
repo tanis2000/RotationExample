@@ -33,10 +33,8 @@
 -(void)dealloc
 {
     if (secondController != nil) {
-        [secondController release];
         secondController = nil;
     }
-    [super dealloc];
 }
 
 #pragma mark - View lifecycle
